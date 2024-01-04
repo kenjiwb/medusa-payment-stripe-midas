@@ -59,8 +59,8 @@ export async function handlePaymentHook({
       cart_id?: string;
       resource_id?: string;
       charge_type: "ONLINE";
-      order_id: "JPBSSTORE";
-      on_behalf_of: "acct_1OGzqCPRNfBYA4LP";
+      order_id: "MIDAS";
+      on_behalf_of: "acct_1OSZymPJAcspYymR";
     };
     // automatic_payment_methods: {
     //   enabled: true;
