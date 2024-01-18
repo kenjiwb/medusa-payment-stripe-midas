@@ -109,17 +109,17 @@ abstract class StripeBase extends AbstractPaymentProcessor {
       metadata: {
         resource_id,
         charge_type: "ONLINE",
-        order_id: "MIDAS",
-        on_behalf_of: "acct_1OSZymPJAcspYymR",
+        order_id: resource_id,
+        on_behalf_of: "acct_1OZsBFCdmvlSHSek",
       },
-      on_behalf_of: "acct_1OSZymPJAcspYymR",
+      on_behalf_of: "acct_1OZsBFCdmvlSHSek",
       capture_method: this.options_.capture ? "automatic" : "manual",
       ...intentRequestData,
     };
 
     if (this.options_?.automatic_payment_methods) {
       intentRequest.automatic_payment_methods = { enabled: true };
-      intentRequest.on_behalf_of = "acct_1OSZymPJAcspYymR";
+      intentRequest.on_behalf_of = "acct_1OZsBFCdmvlSHSek";
     }
 
     // if (customer?.metadata?.stripe_id) {
@@ -141,7 +141,7 @@ abstract class StripeBase extends AbstractPaymentProcessor {
     //   intentRequest.metadata = {
     //     charge_type: "ONLINE",
     //     order_id: "MIDAS",
-    //     on_behalf_of: "acct_1OSZymPJAcspYymR",
+    //     on_behalf_of: "acct_1OZsBFCdmvlSHSek",
     //   };
     //   console.log("intentRequest in dist(stripe-base.ts)", intentRequest);
     // }
