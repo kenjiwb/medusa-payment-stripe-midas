@@ -60,7 +60,7 @@ export async function handlePaymentHook({
       resource_id?: string;
       charge_type: "ONLINE";
       order_id: "MIDAS";
-      on_behalf_of: "acct_1OZsBFCdmvlSHSek";
+      on_behalf_of: "acct_1OSZymPJAcspYymR";
     };
     // automatic_payment_methods: {
     //   enabled: true;
